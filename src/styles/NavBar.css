@@ -1,0 +1,47 @@
+/* NavBar.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  padding-top: 20px;
+}
+
+.Harito {
+  color: turquoise;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: turquoise;
+  font-weight: 600;
+  margin-left: 40px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 100%;
+  left: 0%;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
