@@ -1,3 +1,11 @@
+/* In your index.css or global stylesheet */
 body {
+  font-family: "Open Sans", sans-serif; /* Apply Open Sans font */
+  margin: 0;
   background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
