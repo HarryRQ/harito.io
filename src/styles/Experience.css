@@ -1,0 +1,27 @@
+#experience menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  list-style: none;
+  flex-direction: row;
+}
+
+#experience menu button {
+  background-color: black;
+  color: turquoise;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+#experience menu button:hover {
+  color: white;
+}
+
+#experience h3 {
+  padding-left: 40px;
+  font-size: 30px;
+}

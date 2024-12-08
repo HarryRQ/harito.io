@@ -1,0 +1,64 @@
+.about-me {
+  padding-top: 200px;
+  /* padding: 50px 10%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-me-description {
+  max-width: 600px;
+  margin-left: 50px;
+  text-align: justify;
+}
+
+.about-me-description a {
+  color: turquoise;
+  font-weight: bold;
+}
+
+.about-me-image {
+  padding-left: 40px;
+}
+
+.about-me-image img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin-right: 100px;
+  height: auto;
+  border: none;
+  object-fit: cover;
+  /* 
+  width: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px; */
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(-5px); /* Move up by 10px */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
