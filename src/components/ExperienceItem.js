@@ -1,17 +1,9 @@
-export default function ExperienceItem({
-  title,
-  company,
-  location,
-  duration,
-  description,
-}) {
+export default function ExperienceItem({ isSelected, children, onSelect }) {
   return (
     <li>
-      <h1>{title}</h1>
-      <p>{company}</p>
-      <p>{location}</p>
-      <p>{duration}</p>
-      <p>{description}</p>
+      <button className={isSelected ? "active" : undefined} onClick={onSelect}>
+        {children}
+      </button>
     </li>
   );
 }

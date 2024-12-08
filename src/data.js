@@ -5,7 +5,7 @@ export const EXPERIENCE = [
     location: "Aguadilla, P.R.",
     duration: "June 2023 – Present",
     description: [
-      "Enhancing object-oriented design to modernize the F-16’s Modular Mission Computer (MMC) by converting legacy Ada code to C++, ensuring accurate and effective code migration.",
+      "Enhancing object-oriented design to mode`rnize the F-16’s Modular Mission Computer (MMC) by converting legacy Ada code to C++, ensuring accurate and effective code migration.",
       " Redesigned and implemented a critical module responsible for reporting subsystem failures, enhancing functionality and efficiency using object-oriented principles.",
       " Led the development of a system to efficiently monitor and process communication statuses across multiple subsystems, ensuring efficient operation under high data volumes.",
       " Appointed to review and provide feedback on merge requests from new hires, mentoring them on coding standards, best practices, and guiding them through team workflows to ensure a successful onboarding process.",
