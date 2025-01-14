@@ -1,0 +1,115 @@
+.lets-connect {
+  margin-top: 200px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in, transform 1s ease;
+  transform: translateY(50px);
+}
+
+.lets-connect h3 {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(153, 244, 228);
+  margin-bottom: 20px;
+}
+
+.lets-connect-description p {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(153, 244, 228);
+  padding-bottom: 5px;
+  width: auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lets-connect.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments for screens 990px and below */
+@media (max-width: 990px) {
+  .lets-connect {
+    margin-top: 150px; /* Reduced top margin for better spacing */
+    padding: 0 20px; /* Added padding to prevent overflow */
+  }
+
+  .lets-connect h3 {
+    font-size: 30px; /* Reduced font size of the header */
+  }
+
+  .lets-connect-description p {
+    font-size: 14px; /* Reduced font size for better readability */
+    width: 100%; /* Ensured content stays within boundaries */
+  }
+
+  .socials {
+    gap: 15px; /* Reduced gap between icons */
+  }
+}
+
+@media (max-width: 920px) {
+  .lets-connect {
+    margin-top: 150px; /* Reduced top margin for better spacing */
+    padding: 0 20px; /* Added padding to prevent overflow */
+  }
+
+  .lets-connect h3 {
+    font-size: 25px; /* Reduced font size of the header */
+  }
+
+  .lets-connect-description p {
+    font-size: 13px; /* Reduced font size for better readability */
+    width: 100%; /* Ensured content stays within boundaries */
+  }
+
+  .socials {
+    gap: 15px; /* Reduced gap between icons */
+  }
+}
+
+@media (max-width: 834px) {
+  .lets-connect {
+    margin-top: 150px; /* Reduced top margin for better spacing */
+    margin-left: 45px;
+    padding: 0 20px; /* Added padding to prevent overflow */
+  }
+
+  .lets-connect h3 {
+    font-size: 20px; /* Reduced font size of the header */
+  }
+
+  .lets-connect-description p {
+    font-size: 15px; /* Reduced font size for better readability */
+    width: 100%; /* Ensured content stays within boundaries */
+  }
+
+  .socials {
+    gap: 15px; /* Reduced gap between icons */
+  }
+}
+
+/* Responsive adjustments for screens 768px and below */
+@media (max-width: 768px) {
+  .lets-connect {
+    margin-top: 100px; /* Further reduced top margin */
+    margin-left: 0px;
+  }
+
+  .lets-connect h3 {
+    font-size: 25px; /* Smaller header size for compact screens */
+  }
+
+  .lets-connect-description p {
+    font-size: 13px; /* Smaller text for compact layouts */
+    padding: 0 10px; /*Adjusted padding to fit small screens */
+  }
+
+  .socials {
+    gap: 10px; /* Tighter gap between icons */
+  }
+}

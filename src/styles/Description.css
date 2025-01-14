@@ -1,0 +1,231 @@
+.description-section {
+  /* padding: 250px; */
+  padding: 300px 100px;
+  margin-top: 200px;
+  margin-left: 180px;
+}
+
+.description-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(153, 244, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 290px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.description-title::after {
+  background-color: rgb(68, 90, 128);
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin-left: 20px;
+}
+
+.description-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 45px;
+}
+
+.description-text-container {
+  flex: 1;
+  font-size: 1.1rem;
+  /* text-align: justify; */
+  text-align: justify;
+  /* width: 200px; */
+  /* padding-left: 240px; */
+  position: relative;
+  line-height: 26px;
+}
+
+.description-image-container {
+  padding-right: 150px;
+}
+
+.description-image-container img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Base styles for large screens */
+.description-section {
+  padding: 300px 100px;
+  margin-top: 200px;
+  margin-left: 180px;
+}
+
+.description-title {
+  font-size: clamp(20px, 4vw, 30px); /* This makes the font responsive */
+  font-weight: bold;
+  color: rgb(153, 244, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 290px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.description-title::after {
+  background-color: rgb(68, 90, 128);
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin-left: 20px;
+}
+
+.description-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 45px;
+}
+
+.description-text-container {
+  flex: 1;
+  font-size: 1.1rem;
+  text-align: justify;
+  position: relative;
+  line-height: 26px;
+}
+
+.description-image-container {
+  padding-right: 150px;
+}
+
+.description-image-container img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments for medium screens (e.g., tablets, smaller laptops) */
+@media (max-width: 1269px) {
+  .description-title {
+    margin-right: 200px;
+  }
+
+  .description-content {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .description-text-container {
+    font-size: 1.05rem;
+  }
+}
+
+/* Adjustments for smaller screens (e.g., large tablets, small laptops) */
+@media (max-width: 1179px) {
+  .description-title {
+    font-size: clamp(18px, 4vw, 25px); /* This allows for gradual size change */
+  }
+
+  .description-content {
+    padding: 5px;
+    gap: 40px;
+  }
+
+  .description-section {
+    padding-left: 30px;
+    margin-left: 200px;
+  }
+
+  .description-text-container {
+    text-size-adjust: 100%;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 1099px) {
+  .description-title {
+    font-size: clamp(
+      18px,
+      4vw,
+      22px
+    ); /* Gradual reduction for smaller screens */
+  }
+
+  .description-content {
+    padding: 5px;
+    gap: 20px;
+  }
+
+  .description-text-container {
+    font-size: 0.9rem;
+  }
+
+  .description-image-container img {
+    width: 270px;
+  }
+}
+
+@media (max-width: 1052px) {
+  .description-section {
+    margin-left: 100px;
+  }
+  .description-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .description-text-container {
+    padding: 0px 55px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .description-section {
+    margin: 0;
+    padding-top: 145px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+
+  .description-title {
+    margin: 0;
+    font-size: clamp(16px, 6vw, 20px); /* Further adjust font size with clamp */
+  }
+
+  .description-title::after {
+    margin-left: 10px;
+    width: 45%;
+  }
+
+  .description-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .description-text-container {
+    padding: 0px 10px;
+    font-size: 15px;
+  }
+
+  .description-image-container {
+    padding-right: 0;
+  }
+
+  .description-image-container img {
+    max-width: 80%;
+  }
+}
