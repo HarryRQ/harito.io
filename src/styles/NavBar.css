@@ -1,25 +1,27 @@
 /* NavBar.css */
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
-  padding-top: 20px;
   z-index: 1000;
-  background-color: black;
+  background-color: #0f0e47;
 }
 
 .Harito {
   color: turquoise;
   font-weight: 600;
   font-size: 20px;
+  padding-top: 20px;
   padding-left: 40px;
+}
+
+.navbar {
+  margin-right: 20px;
+  padding-top: 20px;
 }
 
 .navbar a {
@@ -28,7 +30,7 @@
   color: turquoise;
   font-weight: 600;
   margin-left: 40px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   display: inline-block;
 }
 
@@ -44,6 +46,41 @@
   transition: 0.3s ease;
 }
 
+.s-icons {
+  display: none;
+}
+
 .navbar a:hover::before {
   width: 100%;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Hide Navbar compone */
+  .navbar {
+    display: none;
+  }
+
+  .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .s-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .Harito {
+    font-size: 35px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
 }

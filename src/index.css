@@ -2,14 +2,41 @@
 body {
   font-family: "Open Sans", sans-serif; /* Apply Open Sans font */
   margin: 0;
-  background-color: black;
+  /* background-color: #0f0e47; */
+  /* background: radial-gradient(
+    circle,
+    #e06267 0%,
+    #5d4d94 50%,
+    #454c9d 75%,
+    #1441b0 100%
+  /* ); */
   color: white;
+  /* background-color: #031386; */
+  background-color: #0f0e47;
+  /* margin: 100vh; */
 }
 
 a {
   text-decoration: none;
+  color: rgb(153, 244, 228);
 }
 
 main {
   padding-top: 80px;
+}
+
+section {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add default font-size adjustments for mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust text size for mobile */
+  }
 }

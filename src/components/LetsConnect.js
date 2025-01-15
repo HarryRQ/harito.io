@@ -31,6 +31,10 @@ export default function LetsConnect() {
           <IconMail size={30} stroke={2} color="rgb(153, 244, 228)" />
         </a>
       </div>
+      <div className="credits">
+        <p>Designed and built by Harry Rivera Quintana</p>
+        <p>All rights reserved. ©</p>
+      </div>
     </section>
   );
 }

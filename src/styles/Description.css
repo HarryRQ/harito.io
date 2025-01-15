@@ -1,8 +1,8 @@
 .description-section {
-  /* padding: 250px; */
   padding: 300px 100px;
   margin-top: 200px;
   margin-left: 180px;
+  margin-right: 180px;
 }
 
 .description-title {
@@ -28,34 +28,44 @@
 
 .description-content {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 50px;
-  gap: 45px;
+  padding: 20px 50px;
 }
 
 .description-text-container {
   flex: 1;
   font-size: 1.1rem;
-  /* text-align: justify; */
   text-align: justify;
-  /* width: 200px; */
-  /* padding-left: 240px; */
   position: relative;
-  line-height: 26px;
+  /* line-height: 26px; */
+  /* line-height: 1.5rem; */
+}
+
+.description-text-container p {
+  line-height: 2rem;
+}
+
+.technologies ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 10px));
+  gap: 8px;
+}
+
+.technologies li {
+  font-size: 1.1rem;
+}
+
+.technologies li::before {
+  content: "▹    ";
+  margin-right: 5px;
+  color: rgb(153, 244, 228);
 }
 
 .description-image-container {
   padding-right: 150px;
-}
-
-.description-image-container img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Base styles for large screens */
@@ -63,44 +73,6 @@
   padding: 300px 100px;
   margin-top: 200px;
   margin-left: 180px;
-}
-
-.description-title {
-  font-size: clamp(20px, 4vw, 30px); /* This makes the font responsive */
-  font-weight: bold;
-  color: rgb(153, 244, 228);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 290px;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.description-title::after {
-  background-color: rgb(68, 90, 128);
-  content: "";
-  display: block;
-  width: 50%;
-  height: 2px;
-  margin-left: 20px;
-}
-
-.description-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-  gap: 45px;
-}
-
-.description-text-container {
-  flex: 1;
-  font-size: 1.1rem;
-  text-align: justify;
-  position: relative;
-  line-height: 26px;
 }
 
 .description-image-container {
